@@ -11,8 +11,6 @@ import com.example.motosproyecto.models.Moto
 
 class ViewHolderMoto (private val binding: ItemBinding,private val borrarItemRecycler: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root){
 
-
-
     //método que se encarga de mapear los item por propiedad del modelo.
 
     fun renderize(moto: Moto){

@@ -20,7 +20,6 @@ class Controller(val context: Context, var binding: ActivityMainBinding) {
         listaMoto = DaoMoto. myDao.getDataMoto(). toMutableList()
     }
 
-
     fun setAdapter() {
         val myActivity = context as MainActivity
         val adapterMoto = AdapterMoto(

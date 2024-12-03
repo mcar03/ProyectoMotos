@@ -44,5 +44,6 @@ object Repository {
         Moto("Honda Africa Twin", 2023, "Honda", 14799.0, "https://www.honda.es/content/dam/central/motorcycles/adventure/africa-twin-adventure-sports-2024/overview/gallery/honda-africa-twin-adventure-sports-gallery-1728x972-desktop2.jpg/_jcr_content/renditions/fb.jpg"),
 
         Moto("Yamaha MT-09", 2023, "Yamaha", 9399.0, "https://cdn2.yamaha-motor.eu/prod/product-assets/2024/MT09AS/2024-Yamaha-MT09AS-EU-Tech_Black-360-Degrees-001-03_Mobile.jpg")
+
     )
 }

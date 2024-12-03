@@ -11,6 +11,5 @@ class DaoMoto private constructor(): InterfaceMoto {
             DaoMoto()
         }
     }
-
         override fun getDataMoto() : List<Moto> = Repository.listMotos
 }

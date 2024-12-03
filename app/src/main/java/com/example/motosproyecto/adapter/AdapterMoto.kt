@@ -12,7 +12,6 @@ private lateinit var binding: ActivityMainBinding
 
 class AdapterMoto(var listMoto : MutableList<Moto>,var borrarItemRecycler: (Int) -> Unit) : RecyclerView.Adapter<ViewHolderMoto>() {
 
-
     /*Método que crea la view del ViewHolderHotel*/
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderMoto {

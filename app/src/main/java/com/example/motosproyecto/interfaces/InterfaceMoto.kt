@@ -7,6 +7,5 @@ interface InterfaceMoto {
     interface InterfaceMusica {
         fun getDataMoto(): List<Moto>
     }
-
     fun getDataMoto(): List<Moto>
 }

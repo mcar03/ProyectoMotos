@@ -11,5 +11,4 @@ class Moto (
     override fun toString(): String {
         return "Moto(nombre = '$nombre',annoFabricacion = '$annoFabricacion', fabricadora = '$fabricadora',precio = '$precio',image= '$image' )"
     }
-
 }
