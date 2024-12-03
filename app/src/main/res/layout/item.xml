@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="70dp"
+    android:layout_height="200dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_gravity="start|center"
+        android:layout_marginLeft="25dp"
+        app:cardCornerRadius="70dp"
+        android:layout_height="130dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/imageViewImagenItemRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewNombreItemRecycler"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:layout_gravity="center|top"
+        android:layout_height="wrap_content"
+        android:text="NombreMoto"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textViewAnnoFrabricacionItemRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="30dp"
+        android:text="Año de Frabricación"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textViewFabricadoraItemRecycler"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Frabricadora"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBorrarItemRecycler"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/bote_de_basura"
+        tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+</androidx.cardview.widget.CardView>
