@@ -7,12 +7,13 @@
     app:cardCornerRadius="70dp"
     android:layout_height="200dp">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/degradado_item">
 
+        <!-- Columna izquierda con la imagen -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -36,65 +37,72 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
+        <!-- Columna derecha con los TextViews -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical">
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/textViewNombreItemRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NombreMoto"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <!-- Año de fabricación -->
+            <TextView
+                android:id="@+id/textViewAnnoFrabricacionItemRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2001"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <!-- Fabricadora -->
+            <TextView
+                android:id="@+id/textViewFabricadoraItemRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fabricadora"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Botón de borrar -->
+            <ImageButton
+                android:id="@+id/imageButtonBorrarItemRecycler"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/bote_de_basura"
+                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <!-- Precio -->
+            <TextView
+                android:id="@+id/textViewPrecioItemRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textSize="14sp" />
+        </LinearLayout>
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewNombreItemRecycler"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="50dp"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:layout_gravity="center|top"
-        android:layout_height="wrap_content"
-        android:text="NombreMoto"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <TextView
-        android:id="@+id/textViewAnnoFrabricacionItemRecycler"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="7dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="30dp"
-        android:text="2001"
-        tools:ignore="HardcodedText,RtlHardcoded" />
-
-    <TextView
-        android:id="@+id/textViewFabricadoraItemRecycler"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
-        android:layout_height="wrap_content"
-        android:text="Frabricadora"
-        tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/imageButtonBorrarItemRecycler"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/bote_de_basura"
-        tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textViewPrecioItemRecycler"
-        android:layout_width="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="26dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:text="Precio" />
 </androidx.cardview.widget.CardView>
