@@ -82,27 +82,36 @@
                 tools:ignore="HardcodedText" />
 
             <!-- Botón de borrar -->
-            <ImageButton
-                android:id="@+id/imageButtonBorrarItemRecycler"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="end"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                app:srcCompat="@drawable/bote_de_basura"
-                tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <!-- Precio -->
             <TextView
                 android:id="@+id/textViewPrecioItemRecycler"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Precio"
-                android:textColor="@color/white"
-                android:textStyle="bold"
                 android:layout_marginTop="10dp"
                 android:gravity="end"
-                android:textSize="14sp" />
+                android:text="Precio"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#7A1818"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="75dp"
+                android:layout_height="40dp" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonBorrarItemRecycler"
+                    android:layout_width="30dp"
+                    android:background="#7A1818"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/bote_de_basura"
+                    tools:ignore="ContentDescription,RtlHardcoded,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Precio -->
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

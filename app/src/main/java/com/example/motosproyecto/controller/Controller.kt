@@ -1,7 +1,9 @@
 package com.example.motosproyecto.controller
 
+
 import android.content.Context
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.motosproyecto.MainActivity
 import com.example.motosproyecto.adapter.AdapterMoto
@@ -34,10 +36,22 @@ class Controller(val context: Context, var binding: ActivityMainBinding) {
 
 
     fun delMoto(pos: Int) {
-        val nombreArtista = listaMoto[pos].nombre
-        listaMoto.removeAt(pos)
-        (binding.recyclerMotos.adapter as AdapterMoto).notifyItemRemoved(pos)
-        (binding.recyclerMotos.adapter as AdapterMoto).notifyItemRangeChanged(pos, listaMoto.size - pos)
-        Toast.makeText(context, "Se eliminó la moto: $nombreArtista", Toast.LENGTH_SHORT).show()
+
+        val alertDialog = AlertDialog.Builder(context)
+            .setTitle("Confirmación")
+            .setMessage("¿Deseas eliminar la moto: ${listaMoto[pos].nombre}?")
+            .setPositiveButton("Sí"){_,_ ->
+
+                val nombreMoto = listaMoto[pos].nombre
+                listaMoto.removeAt(pos)
+                (binding.recyclerMotos.adapter as AdapterMoto).notifyItemRemoved(pos)
+                (binding.recyclerMotos.adapter as AdapterMoto).notifyItemRangeChanged(pos, listaMoto.size - pos)
+                Toast.makeText(context, "Se eliminó la moto: $nombreMoto", Toast.LENGTH_SHORT).show()
+            }
+            .setNegativeButton("No") {dialog, _ ->
+                dialog.dismiss()
+            }
+            .create()
+        alertDialog.show()
     }
 }
