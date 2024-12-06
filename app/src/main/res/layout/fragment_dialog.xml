@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/et_nombreMoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la moto"
+        />
+
+    <EditText
+        android:id="@+id/et_Anno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año moto"
+        />
+
+    <EditText
+        android:id="@+id/et_Frabricadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Frabricadora moto"
+        />
+    <EditText
+        android:id="@+id/et_PrecioMoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio moto"
+        />
+
+    <EditText
+        android:id="@+id/et_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL de imagen"
+        />
+
+</LinearLayout>
