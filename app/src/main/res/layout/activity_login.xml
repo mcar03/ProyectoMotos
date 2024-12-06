@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/degradado_login"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            tools:ignore="MissingConstraints" >
+
+            <ImageView
+                android:id="@+id/imageViewLogoLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/userr" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/editTextLoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Usuario"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonIniciarConFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/facebook"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonIniciarConGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/google"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                app:cardCornerRadius="20dp">
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonIniciarConInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    app:srcCompat="@drawable/social"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLoginEntrar"
+            android:layout_width="200dp"
+            android:textSize="17sp"
+            android:layout_gravity="end"
+            android:layout_margin="15dp"
+            android:backgroundTint="#313131"
+            android:layout_height="wrap_content"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/buttonLoginRegistrarse"
+            android:layout_width="200dp"
+            android:textSize="17sp"
+            android:layout_gravity="end"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#313131"
+            android:text="Registrarse" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:autoLink="none"
+            android:clickable="true"
+            android:focusable="true"
+            android:linksClickable="true"
+            android:text="¿Has olvidado tu contraseña? Pincha aquí"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

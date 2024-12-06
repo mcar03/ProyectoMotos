@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1056888149213",
+    "project_id": "proyectomotos-3bd0c",
+    "storage_bucket": "proyectomotos-3bd0c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056888149213:android:660bc5a5e911360a5f7734",
+        "android_client_info": {
+          "package_name": "com.example.motosproyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3o6zUkvdrmXoiCBLzM7IeJVcvCGMDL7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

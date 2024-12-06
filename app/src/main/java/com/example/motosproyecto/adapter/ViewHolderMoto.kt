@@ -2,6 +2,7 @@ package com.example.motosproyecto.adapter
 
 
 import android.view.View
+import androidx.constraintlayout.motion.widget.MotionScene.Transition.TransitionOnClick
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -9,7 +10,10 @@ import com.bumptech.glide.Glide
 import com.example.motosproyecto.databinding.ItemBinding
 import com.example.motosproyecto.models.Moto
 
-class ViewHolderMoto (private val binding: ItemBinding,private val borrarItemRecycler: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root){
+class ViewHolderMoto (private val binding: ItemBinding,
+                      private val borrarItemRecycler: (Int) -> Unit,
+                      private val editOnClick: (Int, Moto)  -> Unit)
+                        : RecyclerView.ViewHolder(binding.root){
 
 
 
@@ -25,6 +29,7 @@ class ViewHolderMoto (private val binding: ItemBinding,private val borrarItemRec
         Glide.with(itemView.context).load(moto.image).centerCrop().into(binding.imageViewImagenItemRecycler)
 
         borrarItem()
+        editItem(adapterPosition, moto)
     }
 
     private fun borrarItem() {
@@ -33,5 +38,10 @@ class ViewHolderMoto (private val binding: ItemBinding,private val borrarItemRec
         }
     }
 
+    private fun editItem(position: Int, moto: Moto) {
+        binding.imageButtonEditarItemRecycler.setOnClickListener { view ->
+            editOnClick(position, moto)
+        }
 
+    }
 }
