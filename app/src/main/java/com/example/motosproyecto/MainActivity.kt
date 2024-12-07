@@ -32,4 +32,5 @@ class MainActivity : AppCompatActivity() {
         controller = Controller(this, binding)
         controller.setAdapter()
     }
+
 }
