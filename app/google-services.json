@@ -1,26 +1,36 @@
 {
   "project_info": {
-    "project_number": "1056888149213",
-    "project_id": "proyectomotos-3bd0c",
-    "storage_bucket": "proyectomotos-3bd0c.firebasestorage.app"
+    "project_number": "582784653511",
+    "project_id": "proyectomotos-ded01",
+    "storage_bucket": "proyectomotos-ded01.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1056888149213:android:660bc5a5e911360a5f7734",
+        "mobilesdk_app_id": "1:582784653511:android:e489a712d39961e1f7c6e2",
         "android_client_info": {
           "package_name": "com.example.motosproyecto"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "582784653511-bvu2ifdo0u52nup3e9mv50rrto6c66oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyB3o6zUkvdrmXoiCBLzM7IeJVcvCGMDL7Y"
+          "current_key": "AIzaSyABr5Y30aL8X2LaDXEj6ankb-7Y9hY8OyI"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582784653511-bvu2ifdo0u52nup3e9mv50rrto6c66oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
