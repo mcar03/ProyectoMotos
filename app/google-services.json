@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582784653511",
+    "project_id": "proyectomotos-ded01",
+    "storage_bucket": "proyectomotos-ded01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582784653511:android:e489a712d39961e1f7c6e2",
+        "android_client_info": {
+          "package_name": "com.example.motosproyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582784653511-bvu2ifdo0u52nup3e9mv50rrto6c66oq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABr5Y30aL8X2LaDXEj6ankb-7Y9hY8OyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582784653511-bvu2ifdo0u52nup3e9mv50rrto6c66oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

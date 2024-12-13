@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerMotos.layoutManager = LinearLayoutManager( this)
         controller = Controller(this, binding)
         controller.setAdapter()
+
+        var botonAnnadir = binding.imageButtonAnnadirItemRecycler
+        botonAnnadir.setOnClickListener {
+            controller.addMoto()
+        }
     }
+
 
 }
