@@ -8,36 +8,39 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.motosproyecto.MainActivity
 import com.example.motosproyecto.adapter.AdapterMoto
 import com.example.motosproyecto.dao.DaoMoto
-import com.example.motosproyecto.databinding.ActivityMainBinding
 import com.example.motosproyecto.dialogues.CreateDialogue
 import com.example.motosproyecto.dialogues.EditDialogue
+import com.example.motosproyecto.fragment.FragmentMotos
 import com.example.motosproyecto.models.Moto
 
-class Controller(val context: Context, var binding: ActivityMainBinding) {
+class Controller(val context: Context, var fragment: FragmentMotos) {
     lateinit var listaMoto: MutableList<Moto>
     lateinit var adapterMoto: AdapterMoto
     lateinit var mainActivity: MainActivity
     lateinit var layoutManager: LinearLayoutManager
+    val binding = fragment.binding
 
     init {
         initData()
     }
 
     fun initData(){
+
         listaMoto = DaoMoto. myDao.getDataMoto(). toMutableList()
-        mainActivity = context as MainActivity
-        layoutManager = mainActivity.binding.recyclerMotos.layoutManager as LinearLayoutManager
+
     }
 
     fun setAdapter() {
+
+
 
         adapterMoto = AdapterMoto(
             listaMoto,
             {pos -> delMoto(pos)},{pos, moto -> editMoto(pos, moto) }
         )
 
-        mainActivity. binding.recyclerMotos.adapter = adapterMoto
-        mainActivity.binding.recyclerMotos.layoutManager = LinearLayoutManager(context)
+         binding.recyclerMotos.adapter = adapterMoto
+         binding.recyclerMotos.layoutManager = LinearLayoutManager(context)
     }
 
 

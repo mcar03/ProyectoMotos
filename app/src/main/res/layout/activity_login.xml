@@ -162,7 +162,7 @@
             android:clickable="true"
             android:focusable="true"
             android:linksClickable="true"
-            android:text="¿Has olvidado tu contraseña? Pincha aquí"
+            android:text="¿Has olvidado tu contraseña?"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="normal"

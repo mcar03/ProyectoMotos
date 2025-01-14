@@ -69,7 +69,7 @@
             android:textColorHint="@color/white"
             android:hint="contraseña"
             android:textSize="20sp"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:text="" />
         <EditText
@@ -83,7 +83,7 @@
             android:textColorHint="@color/white"
             android:ems="10"
             android:hint="Confirmar Contraseña"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:text="" />
 
