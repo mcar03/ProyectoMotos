@@ -6,16 +6,27 @@
     <group android:checkableBehavior="single">
         <item android:title="Home"
             android:id="@+id/fragmentHome"
-
+            android:icon="@drawable/hogar"
             />
         <item android:title="Setting"
             android:id="@+id/fragmentSettings"
+            android:icon="@drawable/api"
 
             />
         <item android:title="Listado"
             android:id="@+id/fragmentMotos"
+            android:icon="@drawable/lista"
 
             />
+
+
     </group>
+
+
+    <item
+        android:id="@+id/fragmentLogout"
+        android:title="Cerrar sesión"
+        android:icon="@drawable/cerrarsesion"
+        />
 
 </menu>

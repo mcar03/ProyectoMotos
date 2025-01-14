@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
 <item
 
     android:id="@+id/fragmentHome"
-    android:icon="@drawable/github"
+    android:icon="@drawable/hogar"
     android:title="Home"
     app:showAsAction="always"
     ></item>
 
     <item
 
-        android:id="@+id/fragmentSettings"
-        android:icon="@drawable/github"
-        android:title="Settings"
-        app:showAsAction="always"
+        android:id="@+id/fragmentMotos"
+        android:title="Motos"
         ></item>
 
     <item
 
+        android:id="@+id/fragmentSettings"
+        android:title="Ajustes"
 
-
-
-
-        android:id="@+id/fragmentMotos"
-        android:icon="@drawable/github"
-        android:title="Listado"
 
         ></item>
 </menu>

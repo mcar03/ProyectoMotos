@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.FragmentSettings">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Título de la sección -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajustes"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
-</FrameLayout>
+    <!-- Opción para cambiar el tema -->
+    <Switch
+        android:id="@+id/switch_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo Oscuro"
+        android:checked="false"
+        android:textColor="#FFFFFF"
+        android:onClick="onThemeToggle"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Opción para activar/desactivar notificaciones -->
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textColor="#FFFFFF"
+        android:checked="true"
+        android:onClick="onNotificationsToggle"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Barra de ajuste de volumen -->
+    <SeekBar
+        android:id="@+id/volume_seekbar"
+        android:layout_width="200dp"
+        android:layout_height="22dp"
+        android:textColor="#FFFFFF"
+        android:max="100"
+        android:progress="50"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Etiqueta para mostrar el volumen -->
+    <TextView
+        android:id="@+id/volume_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volumen: 50"
+
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</android.widget.FrameLayout>
