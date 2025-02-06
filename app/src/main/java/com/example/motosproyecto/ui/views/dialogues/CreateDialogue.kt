@@ -1,4 +1,4 @@
-package com.example.motosproyecto.dialogues
+package com.example.motosproyecto.ui.views.dialogues
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.example.motosproyecto.R
-import com.example.motosproyecto.models.Moto
+import com.example.motosproyecto.data.models.Moto
 import com.example.motosproyecto.databinding.FragmentDialogBinding
 
 class CreateDialogue(

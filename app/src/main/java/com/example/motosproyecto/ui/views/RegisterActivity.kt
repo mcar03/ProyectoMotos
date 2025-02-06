@@ -1,4 +1,4 @@
-package com.example.motosproyecto
+package com.example.motosproyecto.ui.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.motosproyecto.databinding.ActivityLoginBinding
 import com.example.motosproyecto.databinding.ActivityRegisterBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth

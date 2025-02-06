@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/fragmentHome"
-        android:name="com.example.motosproyecto.fragment.FragmentHome"
+        android:name="com.example.motosproyecto.ui.views.fragment.FragmentHome"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/fragmentSettings"
-        android:name="com.example.motosproyecto.fragment.FragmentSettings"
+        android:name="com.example.motosproyecto.ui.views.fragment.FragmentSettings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/fragmentMotos"
-        android:name="com.example.motosproyecto.fragment.FragmentMotos"
+        android:name="com.example.motosproyecto.ui.views.fragment.FragmentMotos"
         android:label="fragment_motos"
         tools:layout="@layout/fragment_motos" />
 </navigation>

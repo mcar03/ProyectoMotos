@@ -1,4 +1,4 @@
-package com.example.motosproyecto.dialogues
+package com.example.motosproyecto.ui.views.dialogues
 
 import android.app.AlertDialog
 import android.app.Dialog

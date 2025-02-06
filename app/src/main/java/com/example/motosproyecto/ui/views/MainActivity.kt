@@ -1,4 +1,4 @@
-package com.example.motosproyecto
+package com.example.motosproyecto.ui.views
 
 import android.content.Context
 import android.content.Intent
@@ -7,7 +7,7 @@ import android.content.SharedPreferences.Editor
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -17,27 +17,32 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.motosproyecto.R
 import com.example.motosproyecto.controller.Controller
+import com.example.motosproyecto.data.datasource.Motos
+import com.example.motosproyecto.data.models.dao.DaoMoto
 import com.example.motosproyecto.databinding.ActivityMainBinding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.example.motosproyecto.ui.viewmodel.RecyclerViewModel
+import com.example.proyectopmdm.data.models.MutableListMotos
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
-    lateinit var controller : Controller
+    //lateinit var controller : Controller
     //lateinit var  botonLogout : FloatingActionButton
     lateinit var preferencias: SharedPreferences
     private lateinit var editor: Editor
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
+    val motosViewModel : RecyclerViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        MutableListMotos.motos = Motos.listMotos.toMutableList()
 
         val toolbar = binding.appBarLayoutDrawer.toolbar
         val navHost = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment

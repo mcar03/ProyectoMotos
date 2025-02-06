@@ -1,4 +1,4 @@
-package com.example.motosproyecto.fragment
+package com.example.motosproyecto.ui.views.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

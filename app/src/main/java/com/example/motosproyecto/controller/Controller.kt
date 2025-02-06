@@ -5,15 +5,16 @@ import android.content.Context
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.motosproyecto.MainActivity
-import com.example.motosproyecto.adapter.AdapterMoto
-import com.example.motosproyecto.dao.DaoMoto
-import com.example.motosproyecto.dialogues.CreateDialogue
-import com.example.motosproyecto.dialogues.EditDialogue
-import com.example.motosproyecto.fragment.FragmentMotos
-import com.example.motosproyecto.models.Moto
+import com.example.motosproyecto.ui.views.MainActivity
+import com.example.motosproyecto.ui.adapter.AdapterMoto
+import com.example.motosproyecto.data.models.dao.DaoMoto
+import com.example.motosproyecto.ui.views.dialogues.CreateDialogue
+import com.example.motosproyecto.ui.views.dialogues.EditDialogue
+import com.example.motosproyecto.ui.views.fragment.FragmentMotos
+import com.example.motosproyecto.data.models.Moto
 
 class Controller(val context: Context, var fragment: FragmentMotos) {
+    /*
     lateinit var listaMoto: MutableList<Moto>
     lateinit var adapterMoto: AdapterMoto
     lateinit var mainActivity: MainActivity
@@ -26,7 +27,7 @@ class Controller(val context: Context, var fragment: FragmentMotos) {
 
     fun initData(){
 
-        listaMoto = DaoMoto. myDao.getDataMoto(). toMutableList()
+        //listaMoto = DaoMoto.myDao.getDataMoto().toMutableList()
 
     }
 
@@ -100,6 +101,8 @@ class Controller(val context: Context, var fragment: FragmentMotos) {
         adapterMoto.notifyItemInserted(listaMoto.lastIndex)
         layoutManager.scrollToPositionWithOffset(listaMoto.lastIndex, 20)
     }
+    */
+
 }
 
 

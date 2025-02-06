@@ -1,8 +1,8 @@
-package com.example.motosproyecto.object_models
+package com.example.motosproyecto.data.datasource
 
-import com.example.motosproyecto.models.Moto
+import com.example.motosproyecto.data.models.Moto
 
-object Repository {
+object Motos {
     val listMotos : List<Moto> = listOf(
 
         Moto("Honda CBR600RR", 2023, "Honda", 12000.0, "https://www.motofichas.com/images/phocagallery/Honda/cbr600rr-2024/10-honda-cbr650rr-2024-estudio-rojo-01.jpg"),

@@ -1,4 +1,4 @@
-package com.example.motosproyecto.models
+package com.example.motosproyecto.data.models
 
 class Moto (
     var nombre: String,

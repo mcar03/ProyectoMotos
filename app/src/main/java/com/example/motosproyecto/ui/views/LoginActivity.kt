@@ -1,4 +1,4 @@
-package com.example.motosproyecto
+package com.example.motosproyecto.ui.views
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.motosproyecto.R
 import com.example.motosproyecto.databinding.ActivityLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
